@@ -1,4 +1,18 @@
 export default {
+  FONTS: {
+    ROBOTO: {
+      "font-family": "Roboto",
+      "line-height": "140%",
+      "font-style": "normal",
+    },
+
+    POPPINS: {
+      "font-family": "Poppins",
+      "line-height": "140%",
+      "font-style": "normal",
+    }
+  },
+
   COLORS: {
     BACKGROUND_900: "#232129",
     BACKGROUND_800: "#312E38",
@@ -26,12 +40,12 @@ export default {
     DARK_100: "#000405",
     DARK_200: "#00070A",
     DARK_300: "#000204",
-    DARK_400: "000A0F",
+    DARK_400: "#000A0F",
     DARK_500: "#000C12",
-    DARK_600: "00111A",
+    DARK_600: "#00111A",
     DARK_700: "#001119",
     DARK_800: "#0D161B",
-    DARK_900: "0D1D25",
+    DARK_900: "#0D1D25",
     DARK_1000: "#192227",
 
     //BG_GRADIENT_100
