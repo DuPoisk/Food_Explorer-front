@@ -3,7 +3,7 @@ import { Button } from "../../components/Button";
 
 import { Container, Logo, Form } from "./styles";
 
-export function SignIn(){
+export function SignUp(){
   return (
     <Container>
       <Logo>
@@ -15,14 +15,14 @@ export function SignIn(){
             
       <Form>
         <div>
-          <h2>Faça login</h2>
+          <h2>Crie sua conta</h2>
 
-          {/* <label id="newAccount_name">Seu nome
+          <label id="newAccount_name">Seu nome
             <Input
               placeholder="Exemplo: Maria da Silva"
               type="text"
             />
-          </label> */}
+          </label> 
                         
           <label>E-mail
             <Input
@@ -39,8 +39,8 @@ export function SignIn(){
           </label>
             
 
-          <Button title="Entrar"/>
-          <a href="#">Criar uma conta</a>
+          <Button title="Criar conta"/>
+          <a href="#">Já tenho uma conta</a>
         </div>
       </Form>
 
