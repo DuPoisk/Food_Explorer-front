@@ -7,10 +7,10 @@ export default createGlobalStyle `
     box-sizing: border-box;
   }
 
-  :root { 
+  /* :root { 
     --ff-roboto: 'Roboto', sans-serif;
     --ff-poppins: 'Poppins', sans-serif; 
-  }
+  } */
   
 
   body {

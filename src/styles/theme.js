@@ -10,6 +10,12 @@ export default {
       "font-family": "Poppins",
       "line-height": "140%",
       "font-style": "normal",
+    },
+
+    DMSANS: {
+      "font-family": "DM Sans",
+      "line-height": "140%",
+      "font-style": "normal",
     }
   },
 
@@ -56,10 +62,10 @@ export default {
     TOMATO_300: "#AB222E",
     TOMATO_400: "#AB4D55",
 
-    BG_CARROT: "#FBA94C",
-    BG_MINT: "#04D361",
+    CARROT: "#FBA94C",
+    MINT: "#04D361",
 
-    BG_CAKE_200: "#82F3FF",
-    BG_CAKE_100: "#065E7C",
+    CAKE_200: "#82F3FF",
+    CAKE_100: "#065E7C",
   }
 }
