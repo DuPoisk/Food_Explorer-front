@@ -19,7 +19,6 @@ export const Container = styled.header`
   justify-content: space-around;
   align-items: center; 
   gap: 32px;
-  border: pink solid 2px;
 
   > .mobileHeader{
     display: none;

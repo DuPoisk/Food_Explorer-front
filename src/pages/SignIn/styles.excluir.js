@@ -6,7 +6,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center; /*stretch para fazer a distribuição (?) */
-  justify-content: center;  
+  justify-content: center;
+
+  background: ${({ theme }) => theme.COLORS.DARK_400};
+  ${({ theme }) => theme.FONTS.ROBOTO};
 
   @media (min-width: 820px ){
     display: flex;
@@ -17,8 +20,8 @@ export const Container = styled.div`
 
 export const Logo = styled.header`
   width: 316px;
-  margin-bottom: 38px;
-  gap: 10.74px;  
+  margin-bottom: 73px;
+  gap: 10.74px;
 
   display:flex;
   flex-direction: row;
@@ -33,10 +36,9 @@ export const Logo = styled.header`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    /*cor e fonte já definido em global */
   }
 
-  @media (min-width: 820px ){ /*para desktop */
+  @media (min-width: 820px ){
     margin-left: 9%; /*153*/
     gap: 19px;
   }
@@ -44,7 +46,7 @@ export const Logo = styled.header`
 
 export const Form = styled.form`
   >div {
-    /* width: 100%; */
+    width: 100%;
     /* padding: 0 136px; */
     text-align: center;
 
@@ -70,6 +72,14 @@ export const Form = styled.form`
       gap: 8px;
     }
 
+    input {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      color: ${({ theme }) => theme.COLORS.LIGHT_500};
+    }
+
     input, button {
       width: 316px;
       margin-bottom: 32px;
@@ -77,7 +87,6 @@ export const Form = styled.form`
 
     h2, button, a {
       ${({ theme }) => theme.FONTS.POPPINS};
-      color: ${({ theme }) => theme.COLORS.LIGHT_100}; 
     }
   }
 
@@ -85,9 +94,9 @@ export const Form = styled.form`
     margin-right: 5%; /* mudar essa margem depois*/ 
 
     > div {        
-      padding: 64px;
-      border-radius: 16px;
-      background-color: ${({ theme }) => theme.COLORS.DARK_700};        
+        padding: 64px;
+        border-radius: 16px;
+        background-color: ${({ theme }) => theme.COLORS.DARK_700};        
 
       h2 {
         visibility: visible;

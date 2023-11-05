@@ -5,22 +5,15 @@ export default createGlobalStyle `
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  /* :root { 
-    --ff-roboto: 'Roboto', sans-serif;
-    --ff-poppins: 'Poppins', sans-serif; 
-  } */
-  
+  }  
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.DARK_1000};
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    ${({ theme }) => theme.FONTS.ROBOTO};
+    background-color: ${({ theme }) => theme.COLORS.DARK_400};
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
     -webkit-font-smoothing: antialiased; /* para deixar as fontes mais suaves */
-  } 
-
-  
+  }   
 
   a {
     text-decoration: none;
@@ -34,5 +27,4 @@ export default createGlobalStyle `
   button:hover, a:hover{
     filter: brightness(0.9) /*vai escurecer */
   }
-
 `;

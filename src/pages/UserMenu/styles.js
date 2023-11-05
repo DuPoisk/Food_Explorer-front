@@ -5,12 +5,6 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-
-  > footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100vw;
-  }
 `;
 
 export const Content = styled.div`

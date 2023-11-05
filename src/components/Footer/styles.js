@@ -9,10 +9,13 @@ export const Container = styled.div`
   
   gap: 8px;
  
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  position: fixed;
+  bottom: 0px;
 
   > p {
     font-size: 12px;
