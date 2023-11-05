@@ -26,7 +26,7 @@ export function SignUp(){
                         
           <label>E-mail
             <Input
-              placeholder="Exemplo: exemplo@exemplo.com.br"
+              placeholder="Exemplo: maria@email.com.br"
               type="text"
             />
           </label>
@@ -34,7 +34,8 @@ export function SignUp(){
           <label> Senha
             <Input
               placeholder="No mínimo 6 caracteres"
-              type="password"              
+              type="password"  
+              minlength="6" required            
             />
           </label>            
 
