@@ -11,12 +11,11 @@ export const Container = styled.div`
   @media (min-width: 820px ){
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 `;
 
 export const Logo = styled.header`
-  width: 316px;
   margin-bottom: 38px;
   gap: 10.74px;  
 
@@ -34,11 +33,6 @@ export const Logo = styled.header`
     font-weight: 700;
     line-height: normal;
     /*cor e fonte já definido em global */
-  }
-
-  @media (min-width: 820px ){ /*para desktop */
-    margin-left: 9%; /*153*/
-    gap: 19px;
   }
 `;
 
@@ -82,8 +76,6 @@ export const Form = styled.form`
   }
 
   @media (min-width: 820px){
-    margin-right: 5%; /* mudar essa margem depois*/ 
-
     > div {        
       padding: 64px;
       border-radius: 16px;

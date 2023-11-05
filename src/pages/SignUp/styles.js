@@ -86,7 +86,6 @@ export const Form = styled.form`
         font-style: normal;
         font-weight: 500;
         line-height: 140%; 
-        ${({ theme }) => theme.FONTS.POPPINS};
         
       }
 
