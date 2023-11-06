@@ -12,6 +12,27 @@ export const Content = styled.div`
   height: 100vh;
   grid-area: content;
   overflow-y: auto; /* so aparece o scroll quando tem o overflow. se fosse scroll, apareceria sempre*/  
-  background-color: ${({theme }) => theme.COLORS.DARK_400};
+  
+
+  div{
+    display:flex;
+    align-items: center;
+    background-color: ${({theme }) => theme.COLORS.DARK_900};
+    border-radius: 5px;     
+
+    .searchIcon{ /* também poderia chamar de svg*/
+      zoom: 1.3;
+      margin-left: 14px;
+    }
+
+    input{
+      width: 100%
+    }
+  }
+
+  section{
+    margin-top: 36px;
+  }
+ 
 `;
 

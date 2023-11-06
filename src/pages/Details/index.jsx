@@ -1,13 +1,13 @@
 //import { Fragment } from "react"
 import {Container } from "./styles.js";
 
-import {Header} from "../../components/Header/index.jsx";
+import {HeaderDesktop} from "../../components/HeaderDesktop/index.jsx";
 import {Button} from "../../components/Button/index.jsx";
  
 export function Details (){
   return(
     <Container>
-      <Header/>
+      <HeaderDesktop/>
 
       <Button title="Entrar"/>
       <Button title="Criar conta"/>

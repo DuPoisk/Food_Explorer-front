@@ -2,7 +2,6 @@ import { Container } from './styles';
 import { Input } from "../Input"; 
 import { FiSearch, FiLogOut } from "react-icons/fi";
 import { PiReceipt } from "react-icons/pi";
-import { AiOutlineClose } from "react-icons/ai";
 
 /*import {AiOutlineMenu, AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import {PiReceipt, PiCreditCard, PiCaretLeft, PiCaretRight, PiForkKnife, PiPencilSimple } from "react-icons/pi";
@@ -10,7 +9,7 @@ import {MdOutlinePix} from "react-icons/md"
 import {HiOutlineHeart, HiHeart} from "react-icons/hi"
 */
 
-export function Header(){
+export function HeaderDesktop(){
   return(
     <Container>
         <div className='logoUser'>
@@ -21,11 +20,11 @@ export function Header(){
           <p>food explorer <span >admin</span></p>
         </div>    
 
-        <div className='userInput'>
+        <div className='inputWrapper'>
+          <FiSearch className='searchIcon'/>
           <Input
             placeholder="Busque por pratos ou ingredientes"
             type="text"
-            icon={FiSearch}
           />
         </div>
 
@@ -34,11 +33,8 @@ export function Header(){
           <p>Pedidos (00)</p>
         </a>
 
-        <FiLogOut className='logoutIcon'/>
-
-        <div className='mobileHeader'>
-          <AiOutlineClose className='closeIcon'/>
-          <p>Menu</p>
+        <div className='logoutIcon'>
+          <FiLogOut size={32}/>
         </div>
     </Container>
   );

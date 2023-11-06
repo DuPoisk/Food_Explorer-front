@@ -13,11 +13,14 @@ export function UserMenu(){
       <HeaderMobileMenu/>  
      
       <Content>
-        <Input
-          placeholder="Busque por pratos ou ingredientes"
-          type="text"
-          icon={FiSearch}
-        />
+        <div>
+          <FiSearch className="searchIcon"/>
+          <Input
+            placeholder="Busque por pratos ou ingredientes"
+            type="text"
+            // icon={FiSearch}
+          />          
+        </div>
         <Section title="Sair"></Section>
       </Content>
 

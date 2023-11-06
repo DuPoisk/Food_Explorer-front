@@ -7,7 +7,7 @@ export function Input({ icon:Icon, ...rest}){
       <input {...rest} />
 
     </Container>
-  )
+  );
 }
 
 /* obs, o nome de todo componente tem que começar com letra maiúscula. então não posso

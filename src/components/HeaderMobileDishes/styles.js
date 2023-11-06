@@ -4,7 +4,7 @@ export const Container = styled.header`
   position: relative;
   grid-area: header;
   width: 100%;
-  height: 104px;
+  height: 114px;
   padding: 24px auto;
 
   /*border-bottom-width: 1px;
