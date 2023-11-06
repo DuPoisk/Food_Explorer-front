@@ -1,7 +1,7 @@
 
 import {FiSearch} from "react-icons/fi";
 import {Footer} from "../../components/Footer";
-import {Header} from "../../components/Header";
+import {HeaderMobileMenu} from "../../components/HeaderMobileMenu";
 import {Input} from "../../components/Input";
 import {Section} from "../../components/Section";
 
@@ -10,7 +10,7 @@ import {Container, Content} from "./styles.js";
 export function UserMenu(){
   return(
     <Container>
-      <Header/>  
+      <HeaderMobileMenu/>  
      
       <Content>
         <Input

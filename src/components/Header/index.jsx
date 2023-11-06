@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import { Input } from "../../components/Input"; 
+import { Input } from "../Input"; 
 import { FiSearch, FiLogOut } from "react-icons/fi";
 import { PiReceipt } from "react-icons/pi";
 import { AiOutlineClose } from "react-icons/ai";

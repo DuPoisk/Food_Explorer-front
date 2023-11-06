@@ -5,13 +5,13 @@ import GlobalStyles from './styles/global'
 
 import theme from "./styles/theme.js"
 
-import { SignIn }  from './pages/SignIn/index.jsx'
+import { UserMenu }  from './pages/UserMenu/index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       < GlobalStyles />
-      <SignIn />
+      <UserMenu />
     </ThemeProvider>
   </React.StrictMode>,
 )
