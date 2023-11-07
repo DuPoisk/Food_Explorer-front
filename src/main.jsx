@@ -5,13 +5,13 @@ import GlobalStyles from './styles/global'
 
 import theme from "./styles/theme.js"
 
-import { UserHomeDesktop}  from './pages/UserHomeDesktop'
+import { Teste}  from './pages/Teste'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       < GlobalStyles />
-      <UserHomeDesktop/>
+      <Teste/>
     </ThemeProvider>
   </React.StrictMode>,
 )
