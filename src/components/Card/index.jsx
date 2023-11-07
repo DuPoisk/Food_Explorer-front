@@ -20,7 +20,9 @@ export function Card() {
         {/* <PiPencilSimple className="pencil"/> */}
       </div>   
 
-      <img src="../../assets/dishes/imageTest.png" alt="Imagem do prato" />
+      <div className="image">
+       <img src="../../assets/dishes/imageTest.png" alt="Imagem do prato" />
+      </div>
 
       {/* <DishInfos> */}
         
@@ -33,8 +35,7 @@ export function Card() {
         <ButtonQuantity/>  
         <Button title="Incluir"/> 
       </div>
-    </Container>
-    
+    </Container>    
   )
 }
 

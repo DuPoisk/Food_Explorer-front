@@ -23,7 +23,7 @@ export const Container= styled.div`
     right: 18px;
   }
 
-  img{
+  .image{
     width:176px;
     height:176px;
     border-radius:50%;

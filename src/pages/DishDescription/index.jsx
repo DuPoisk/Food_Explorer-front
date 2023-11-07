@@ -1,6 +1,6 @@
 import { Container, Ingredients, Content } from "./styles";
 import { HeaderDesktop } from "../../components/HeaderDesktop";
-//import { BackButton } from "../../components/BackButton";
+import { ButtonBack } from "../../components/ButtonBack";
 import dish from "../../assets/dishes/salada.png";
 import { Footer } from "../../components/Footer";
 import { Button } from "../../components/Button";
@@ -19,12 +19,11 @@ export function DishDescription() {
       
       <Content>    
         <div className="backButton">
-          <PiCaretLeft size={24}/>
-          <p>voltar</p>
+          <ButtonBack/>
         </div> 
 
         <main>
-          <img src={dish} alt="Prato selecionado" />
+          <img src="../../assets/dishes/salada.png" alt="Prato selecionado" />
           <div>
             <h2>Salada Ravanello</h2>
             <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</p>
