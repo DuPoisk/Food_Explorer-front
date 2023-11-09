@@ -11,7 +11,6 @@ export const Container = styled.button `
   align-items: center;
   border: 0px;
   border-radius: 5px;
-  margin-top: 5px; /* apenas para visualizar por enquanto. apagar*/
 
   text-align: center;
   

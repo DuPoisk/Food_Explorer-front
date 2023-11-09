@@ -11,6 +11,11 @@ export const Container = styled.button `
 
   border: none;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+
   p {
     width:74px;
     height:34px;
