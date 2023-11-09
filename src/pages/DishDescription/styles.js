@@ -15,19 +15,9 @@ export const Container = styled.div`
 
 export const Ingredients = styled.ul`
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 2.4rem;
-
-  > li {
-    ${({ theme }) => theme.FONTS.POPPINS};
-    background-color: ${({ theme }) => theme.COLORS.DARK_1000};
-    font-size: 1.4rem;
-
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-  }
+  gap: 12px;
 `;
 
 export const Content = styled.div`

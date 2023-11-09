@@ -14,7 +14,5 @@ export const Container = styled.section`
     border-bottom-color: ${({theme }) => theme.COLORS.DARK_1000};
 
     padding: 10px;
-
-
   }
 `
