@@ -4,6 +4,7 @@ import {HiOutlineHeart, HiHeart} from "react-icons/hi";
 import {PiCaretRight, PiPencilSimple } from "react-icons/pi";
 import {ButtonQuantity} from "../../components/ButtonQuantity";
 import {Button} from "../../components/Button";
+import Dish from "../../assets/dishes/salada.png";
 
 /*import {AiOutlineMenu, AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import {PiReceipt, PiCreditCard, PiCaretLeft, PiCaretRight, PiForkKnife, PiPencilSimple } from "react-icons/pi";
@@ -21,7 +22,7 @@ export function Card() {
       </div>   
 
       <div className="image">
-       <img src="../../assets/dishes/imageTest.png" alt="Imagem do prato" />
+       <img src={Dish} alt="Imagem do prato" />
       </div>
 
       {/* <DishInfos> */}

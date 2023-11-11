@@ -2,7 +2,7 @@ import { Container } from "./styles";
 //import { BackButton } from "../../components/BackButton";
 
 import { Footer } from "../../components/Footer";
-import { HeaderDesktop } from "../../components/HeaderDesktop";
+import { HeaderMobileDishes } from "../../components/HeaderMobileDishes";
 import {Card} from "../../components/Card";
 //import { ButtonQuantity } from "../../components/ButtonQuantity";
 
@@ -15,8 +15,9 @@ import {HiOutlineHeart, HiHeart} from "react-icons/hi"
 export function Teste() {
   return (
     <Container>
-      <HeaderDesktop />  
+      <HeaderMobileDishes />  
 
+      <Card/>
       <Card/>
       
         

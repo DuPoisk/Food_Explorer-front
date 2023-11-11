@@ -8,24 +8,28 @@ export const Container = styled.div`
   border-radius: 5px;
 
   > input {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px;  /* 100%*/
-    height: 48px;
-    padding: 12px 14px;
+    line-height: 1.6rem;  /* 100%*/
+    height: 3rem;
+    padding: 0.75rem 0.875rem;
     background-color: ${({ theme }) => theme.COLORS.DARK_900};  /* preenchimento */  
     color: ${({ theme }) => theme.COLORS.LIGHT_500};
     border: 0;
     border-radius: 5px; 
     
 
-    &:placeholder {
+    ::placeholder {
       color: ${({ theme }) => theme.COLORS.LIGHT_500};
     }  
   }
+
+  input:invalid{
+    border: 2px solid ${({ theme }) => theme.COLORS.TOMATO_200};
+  }
   
   > svg {
-    margin-left: 16px;   
+    margin-left: 1.6rem;   
   }
 `;

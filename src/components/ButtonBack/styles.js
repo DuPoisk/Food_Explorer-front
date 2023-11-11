@@ -4,7 +4,7 @@ export const Container = styled.button `
   background-color:transparent;
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
   ${({ theme }) => theme.FONTS.POPPINS};
-  font-size: 24px;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 33.6px */
@@ -13,11 +13,10 @@ export const Container = styled.button `
 
   display: flex;
   flex-direction: row;
-  align-items: center;
-  
+  align-items: center;  
 
   p {
-    width:74px;
-    height:34px;
+    width:7.4rem;
+    /* height:34px; */
   }
 `

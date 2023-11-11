@@ -18,7 +18,7 @@ export function Carousel() {
   const carousel = useRef(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/static/shoes.json") // link da minha api
+    fetch("http://localhost:3000/static/shoes.json") //  api
     .then((response) => response.json())
     .then(setData); // passando a função como parâmetro
   }, []);

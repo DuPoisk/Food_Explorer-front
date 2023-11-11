@@ -7,6 +7,10 @@ export default createGlobalStyle `
     box-sizing: border-box;
   }  
 
+  :root{   
+    font-size: 62.5%;  /*1 rem = 10px */
+  }
+
   body {
     ${({ theme }) => theme.FONTS.ROBOTO};
     background-color: ${({ theme }) => theme.COLORS.DARK_400};

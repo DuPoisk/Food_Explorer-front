@@ -35,7 +35,8 @@ export function SignUp(){
             <Input
               placeholder="No mínimo 6 caracteres"
               type="password"  
-              minlength="6" required            
+              minLength ="6"
+              required            
             />
           </label>            
 

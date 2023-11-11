@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Container = styled.header`
   /* grid-area: header; */
   width: 100%;
-  height: 114px;
-  padding-left: 28px;
-  gap: 16px;
+  height: 11.4rem;
+  padding-left: 2.8rem;
+  gap: 1.6rem;
 
   display: flex;
   align-items: center; 
@@ -14,15 +14,15 @@ export const Container = styled.header`
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
   .closeIcon  {
-    width: 24px;
-    height: 24px; /* mudei de 18 para 24*/
+    width: 2.4rem;
+    height: 2.4rem; /* mudei de 18 para 24*/
   }
 
   p {
     background: transparent; /* se ao inves de p for button*/
     color: ${({ theme }) => theme.COLORS.LIGHT_100}; /* se ao inves de p for button*/
 
-    font-size: 21.163px;
+    font-size: 2.1163rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
