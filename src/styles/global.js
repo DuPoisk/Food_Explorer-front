@@ -17,6 +17,13 @@ export default createGlobalStyle `
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
     -webkit-font-smoothing: antialiased; /* para deixar as fontes mais suaves */
+
+    display: grid;
+    grid-template-rows: 7.125rem auto 4.8125rem; 
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
   }   
 
   a {

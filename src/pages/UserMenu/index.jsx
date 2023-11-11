@@ -24,9 +24,9 @@ export function UserMenu(){
         <Section title="Sair"></Section>
       </Content>
 
-      <footer>
+      {/* <footer> */}
         <Footer/>
-      </footer>
+      {/* </footer> */}
     </Container>
   )
 }

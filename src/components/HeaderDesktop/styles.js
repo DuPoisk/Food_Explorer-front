@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  /* position: relative; */
+  /* position: fixed; */
   grid-area: header;
   width: 100%;
   height: 11.4rem;
@@ -23,15 +23,15 @@ export const Container = styled.header`
   .logoUser{
     display: flex;
     flex-direction: row;
-    margin-left: 10.0rem;  
-    white-space: nowrap;  
+    margin-left: 10.0rem;
+    white-space: nowrap;
 
     ${({ theme }) => theme.FONTS.POPPINS};
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     font-size: 2.4rem;
     font-weight: 700;
     gap: 1.0rem;
-    
+
     span {
       ${({ theme }) => theme.FONTS.ROBOTO};
       color: ${({ theme }) => theme.COLORS.CAKE_200};
@@ -43,30 +43,30 @@ export const Container = styled.header`
   }
 
   input{
-    width: 100%;    
+    width: 100%;
   }
 
-  .inputWrapper {   
+  .inputWrapper {
     /* width: clamp(40%, 65%, 70%);  */
-    width: 50%; 
+    width: 50%;
     display:flex;
     align-items: center;
     background-color: ${({theme }) => theme.COLORS.DARK_900};
-    border-radius: 0.5rem; 
-    
+    border-radius: 0.5rem;
+
     .searchIcon {/* também poderia chamar de svg*/
       zoom: 1.3;
       margin-left: 1.4rem;
     }
   }
-  
+
   .buttonChart {
     background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     ${({ theme }) => theme.FONTS.POPPINS};
     font-size: 1.4rem;
     font-weight: 500;
-    line-height: 2.4rem;    
+    line-height: 2.4rem;
     padding: 1.2rem 3.2rem;
     white-space: nowrap; /* para evitar quebra de linha*/
 
@@ -76,16 +76,16 @@ export const Container = styled.header`
     align-items: center;
     border-radius: 5px;
     border: 0;
-    gap: 0.8rem;  
-    
+    gap: 0.8rem;
+
     &:disabled { /* quando o botão estiver desabilitado*/
       opacity: 0.5;
-    }    
+    }
   }
-  
+
   .logoutIcon {
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};    
-  }  
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
 
   @media (max-width: 1085px){
     .logoUser{
@@ -137,7 +137,7 @@ export const Container = styled.header`
     visibility: hidden;
   }
 
-   @media (max-width: 746px){ 
+   @media (max-width: 746px){
     border: solid blue 2px;
     .logoUser, .inputWrapper, .buttonChart, .logoutIcon  {
       display: none;
@@ -149,12 +149,12 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.LIGHT_100};
       font-size: 21.163px;
       font-weight: 400;
-      
-      display: flex;     
+
+      display: flex;
       align-items: center;
       gap: 16px;
       position: fixed;
-      left: 28px;      
+      left: 28px;
     }
   }  */
 `;

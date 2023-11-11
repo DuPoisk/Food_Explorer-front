@@ -8,13 +8,15 @@ export const Container = styled.div`
   padding: 2.4rem 2.8rem;
   
   gap: 0.8rem;
- 
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
-  /* position: absolute; */ /*  botar position: relative no seu wrapper e position: absolute no seu footer.*/
+  /* position: absolute; 
+  bottom: 0px; */
+  /*  botar position: relative no seu wrapper e position: absolute no seu footer.*/
 
   bottom: 0px;
 

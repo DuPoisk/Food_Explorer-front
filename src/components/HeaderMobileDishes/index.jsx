@@ -2,6 +2,7 @@ import { Container } from './styles';
 import { AiOutlineMenu } from "react-icons/ai";
 import { PiReceipt } from "react-icons/pi";
 import {Button} from "../Button";
+
 /*import {AiOutlineMenu, AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import {PiReceipt, PiCreditCard, PiCaretLeft, PiCaretRight, PiForkKnife, PiPencilSimple } from "react-icons/pi";
 import {MdOutlinePix} from "react-icons/md"

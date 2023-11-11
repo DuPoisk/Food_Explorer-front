@@ -158,9 +158,27 @@ export const Content = styled.div`
     display: none;
   }
 
+  .buttons{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .deleteButton{    
+    display: flex;
+    align-items: center;    
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+  }
+
+  .deleteButton:hover{
+    background-color: ${({ theme }) => theme.COLORS.LIGHT_700};
+  }
+
   .submitButton{
-    margin: 1.5rem 3.2rem 8.13rem;
     background-color: ${({ theme }) => theme.COLORS.TOMATO_400};
+    width: 10.75rem;
+    
+    
   }
 
   .submitButton:hover{
