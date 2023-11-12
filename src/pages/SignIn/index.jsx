@@ -28,6 +28,7 @@ export function SignIn(){
             <Input
               placeholder="Exemplo: exemplo@exemplo.com.br"
               type="text"
+              required
             />
           </label>
           

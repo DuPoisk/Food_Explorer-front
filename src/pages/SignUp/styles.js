@@ -16,7 +16,7 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.header`
-  margin-bottom: 3.8rem;
+  margin-bottom: 4.56rem;
   gap: 1.074rem;
 
   display:flex;
@@ -37,8 +37,6 @@ export const Logo = styled.header`
 
 export const Form = styled.form`
   >div {
-    /* width: 100%; */
-    /* padding: 0 136px; */
     text-align: center;
 
     display:flex;
@@ -51,20 +49,20 @@ export const Form = styled.form`
     }
 
     > label {
-      font-size: 1.6rem;
+      font-size: 1rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.6rem;
+      line-height: 1rem;
       color: ${({ theme }) => theme.COLORS.LIGHT_400};
 
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 0.8rem;
+      gap: 0.7rem;
     }
 
     input, button {
-      width: 31.6rem;
+      width: 30rem;
       margin-bottom: 3.2rem;
     }
 
@@ -82,15 +80,15 @@ export const Form = styled.form`
 
       h2 {
         visibility: visible;
-        font-size: 3.2rem;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 140%; 
+        line-height: 2.8rem; 
         
       }
 
       h2, input, button {
-        margin-bottom: 3.2rem;
+        margin-bottom: 2rem;
       }
     }
   }

@@ -65,7 +65,7 @@ export const Form = styled.form`
     }
 
     input, button {
-      width: 31.6rem;
+      width: 30rem;
       margin-bottom: 3.2rem;
     }
 
@@ -73,6 +73,10 @@ export const Form = styled.form`
       ${({ theme }) => theme.FONTS.POPPINS};
       color: ${({ theme }) => theme.COLORS.LIGHT_100}; 
     }
+
+    input:invalid{
+    border: 2px solid ${({ theme }) => theme.COLORS.LIGHT_500};
+  }
   }
 
   @media (min-width: 820px){

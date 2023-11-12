@@ -8,16 +8,18 @@ export const Container = styled.div`
   border-radius: 5px;
 
   > input {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.6rem;  /* 100%*/
+    line-height: 1rem;  /* 100%*/
+
     height: 3rem;
     padding: 0.75rem 0.875rem;
     background-color: ${({ theme }) => theme.COLORS.DARK_900};  /* preenchimento */  
     color: ${({ theme }) => theme.COLORS.LIGHT_500};
-    border: 0;
-    border-radius: 5px; 
+    border: 0;    
+    outline: unset;
+    border-radius: 0.5rem; 
     
 
     ::placeholder {
