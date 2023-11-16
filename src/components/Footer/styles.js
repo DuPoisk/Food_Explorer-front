@@ -2,23 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 7.7rem;
-  background-color: ${({theme}) => theme.COLORS.DARK_600};
-
-  padding: 2.4rem 2.8rem;
-  
+  padding: 2.4rem 2.8rem;  
   gap: 0.8rem;
-
+  position: absolute;
+  bottom: 0px;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-  /* position: absolute; 
-  bottom: 0px; */
-  /*  botar position: relative no seu wrapper e position: absolute no seu footer.*/
-
-  bottom: 0px;
+  background-color: ${({theme}) => theme.COLORS.DARK_600};  
 
   > p {
     font-size: 1.2rem;

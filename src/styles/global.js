@@ -23,7 +23,8 @@ export default createGlobalStyle `
     grid-template-areas:
     "header"
     "content"
-    "footer";
+    "footer" 
+    /*;*/
   }   
 
   a {
@@ -38,4 +39,6 @@ export default createGlobalStyle `
   button:hover, a:hover{
     filter: brightness(0.9) /*vai escurecer */
   }
+
+ 
 `;
