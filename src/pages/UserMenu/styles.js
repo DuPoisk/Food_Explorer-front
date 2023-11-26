@@ -12,7 +12,6 @@ export const Content = styled.div`
   height: 100vh;
   grid-area: content;
   overflow-y: auto; /* so aparece o scroll quando tem o overflow. se fosse scroll, apareceria sempre*/  
-  
 
   div{
     display:flex;
@@ -31,8 +30,10 @@ export const Content = styled.div`
   }
 
   section{
-    margin-top: 36px;
+    margin-top: 2.25rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
   }
  
 `;
-

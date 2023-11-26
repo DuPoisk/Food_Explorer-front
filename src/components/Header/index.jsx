@@ -10,7 +10,7 @@ import {MdOutlinePix} from "react-icons/md"
 import {HiOutlineHeart, HiHeart} from "react-icons/hi"
 */
 
-export function HeaderDesktop(){
+export function Header(){
   return(
     <Container>
         <AiOutlineMenu size={32} className='menuIcon'/>

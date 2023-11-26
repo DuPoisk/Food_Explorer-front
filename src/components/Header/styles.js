@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+  position: relative;
+  z-index:2;
   grid-area: header;
   width: 100%;
   padding: 1.5rem 7.60rem;

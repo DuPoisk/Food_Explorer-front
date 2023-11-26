@@ -45,7 +45,7 @@ export const Container= styled.div`
   }
 
   h2{
-    font-size: "clamp(1rem, 1.5rem, 2rem)";
+    font-size: "(1rem, 1.5rem, 2rem)";
     font-weight: 400;
     line-height: 3.2rem; /* 160%*/
     color: ${({theme})=>theme.COLORS.CAKE_200};
