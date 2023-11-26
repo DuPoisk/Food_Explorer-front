@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   padding: 2.4rem 2.8rem;  
   gap: 0.8rem;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
   
   display: flex;

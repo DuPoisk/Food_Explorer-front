@@ -3,7 +3,20 @@ import { Button } from "../../components/Button";
 
 import { Container, Logo, Form } from "./styles";
 
+import {useState} from "react";
+import { useAuth } from "../../hooks/auth";
+import { Link } from "react-router-dom";
+
 export function SignIn(){
+  const[email, setEmail] = useState("");
+  const[password, setPassword] = useState("");
+  const {signIn} = useAuth(); // um hook que me devolve um conteúdo na variável data
+  
+
+  function handleSignIn(){
+    signIn({email, password});
+  }
+
   return (
     <Container>
       <Logo>
@@ -29,6 +42,7 @@ export function SignIn(){
               placeholder="Exemplo: exemplo@exemplo.com.br"
               type="text"
               required
+              onChange={event => setEmail(event.target.value)}
             />
           </label>
           
@@ -37,13 +51,16 @@ export function SignIn(){
               placeholder="No mínimo 6 caracteres"
               type="password"        
               minLength ="6"
-              required     
+              required   
+              onChange={event => setPassword(event.target.value)}  
             />
           </label>
             
 
-          <Button title="Entrar"/>
-          <a href="#">Criar uma conta</a>
+          <Button title="Entrar" onClick={handleSignIn}/>
+          <Link to="/register">
+            Criar uma conta
+          </Link>  
         </div>
       </Form>
 

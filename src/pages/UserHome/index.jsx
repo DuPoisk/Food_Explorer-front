@@ -1,6 +1,7 @@
 import {Container, Content} from "./styles.js";
 import {Footer} from "../../components/Footer/index.jsx";
 import {Header} from "../../components/Header";
+import {NewCarousel} from "../../components/NewCarousel";
 
 
 export function UserHome(){
@@ -20,6 +21,11 @@ export function UserHome(){
           </div>
 
           {/* <Carousel/> */}
+          <p>Refeições</p>
+            <NewCarousel>
+            </NewCarousel>
+
+          
 
         </main>
       </Content>

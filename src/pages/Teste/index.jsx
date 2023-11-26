@@ -2,8 +2,9 @@ import { Container } from "./styles";
 //import { BackButton } from "../../components/BackButton";
 
 import { Footer } from "../../components/Footer";
-import { HeaderMobileDishes } from "../../components/HeaderMobileDishes";
-import {Card} from "../../components/Card";
+import { Header } from "../../components/Header";
+// import {Card} from "../../components/Card";
+import {NewCarousel} from "../../components/NewCarousel";
 //import { ButtonQuantity } from "../../components/ButtonQuantity";
 
 /*import {AiOutlineMenu, AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
@@ -15,10 +16,8 @@ import {HiOutlineHeart, HiHeart} from "react-icons/hi"
 export function Teste() {
   return (
     <Container>
-      <HeaderMobileDishes />  
-
-      <Card/>
-      <Card/>
+      <Header /> 
+      <NewCarousel/>
       
         
 
