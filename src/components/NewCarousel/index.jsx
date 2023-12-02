@@ -9,6 +9,7 @@ import { ButtonQuantity } from "../ButtonQuantity";
 import { Button } from "../Button";
 import {HiOutlineHeart} from "react-icons/hi"; // HiHeart
 import {PiCaretRight} from "react-icons/pi"; 
+import Dish from "../../assets/dishes/salada.png";
 
 
 const images = [image1, image2, image3];
