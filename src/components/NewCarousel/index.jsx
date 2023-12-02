@@ -5,6 +5,11 @@ import image1 from "../../assetsNew/gambe.png";
 import image2 from "../../assetsNew/macaron.png";
 import image3 from "../../assetsNew/ravanello.png";
 import {useState, useEffect, useRef} from "react";
+import { ButtonQuantity } from "../ButtonQuantity";
+import { Button } from "../Button";
+import {HiOutlineHeart} from "react-icons/hi"; // HiHeart
+import {PiCaretRight} from "react-icons/pi"; 
+
 
 const images = [image1, image2, image3];
 // const starter = [image1, image2, image3];

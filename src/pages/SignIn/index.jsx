@@ -30,12 +30,6 @@ export function SignIn(){
         <div>
           <h2>Faça login</h2>
 
-          {/* <label id="newAccount_name">Seu nome
-            <Input
-              placeholder="Exemplo: Maria da Silva"
-              type="text"
-            />
-          </label> */}
                         
           <label>E-mail
             <Input
@@ -48,9 +42,9 @@ export function SignIn(){
           
           <label> Senha
             <Input
-              placeholder="No mínimo 6 caracteres"
+              placeholder="No mínimo 8 caracteres"
               type="password"        
-              minLength ="6"
+              minLength ="8"
               required   
               onChange={event => setPassword(event.target.value)}  
             />
@@ -63,7 +57,6 @@ export function SignIn(){
           </Link>  
         </div>
       </Form>
-
     </Container>
   );
 }

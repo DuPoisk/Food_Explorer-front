@@ -64,9 +64,9 @@ export function SignUp(){
           
           <label> Senha
             <Input
-              placeholder="No mínimo 6 caracteres"
+              placeholder="No mínimo 8 caracteres"
               type="password"  
-              minLength ="6"
+              minLength ="8"
               required               
               onChange={event => setPassword(event.target.value)}           
             />
