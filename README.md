@@ -11,27 +11,22 @@
 
 ## :bulb: Colocando em prática
 
-- React;
-- Routes;
-- components;
-- hooks;
+- React
+- Routes
+- components
+- hooks
+- assets
+- responsiveness
 
 ## 🛠️ Tecnologias utilizadas
 
 - HTML e CSS
 - Javascript
 - React
-- Vite
 - Node.js
+- Vite
 - Styled Components
 - Axios
-- Express
-- Multer
-- CORS
-- knex
-- sqlite
-- bcryptjs
-- dotenv
-- netlify
+- netlify.com
 
 
