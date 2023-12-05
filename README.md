@@ -14,9 +14,7 @@
 - React;
 - Routes;
 - components;
-- Props;
 - hooks;
-- context;
 
 ## 🛠️ Tecnologias utilizadas
 
