@@ -6,7 +6,7 @@ import { Footer } from "../../components/Footer";
 import { Button } from "../../components/Button";
 import { ButtonQuantity } from "../../components/ButtonQuantity";
 import {Tag} from "../../components/Tag";
-import Dish from "../../assets/dishes/salada.png";
+import Dish from "../../assets/prune.png";// exemplo
 
 /*import {AiOutlineMenu, AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import {PiReceipt, PiCreditCard, PiCaretLeft, PiCaretRight, PiForkKnife, PiPencilSimple } from "react-icons/pi";

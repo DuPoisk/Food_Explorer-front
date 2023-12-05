@@ -7,6 +7,7 @@ import {Button} from "../../components/Button";
 import {Tag} from "../../components/Tag";
 import { FiLogOut } from "react-icons/fi";
 
+
 export function DishEdit(){
 return(
   <Container>
@@ -96,15 +97,3 @@ return(
  
 )}
 
-/* 
-function addTag() {
-      var ingredientsInput = document.getElementById("ingredients");
-      var currentIngredients = ingredientsInput.value;
-      var newIngredient = prompt("Enter a new ingredient:");
-      
-      if (newIngredient) {
-        // Add the new ingredient as a tag
-        ingredientsInput.value = currentIngredients + (currentIngredients ? ', ' : '') + newIngredient;
-      }
-    }
-*/

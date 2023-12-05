@@ -1,11 +1,12 @@
+import { Container, Logo, Form } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
-
-import { Container, Logo, Form } from "./styles";
-
-import {useState} from "react";// hook para criar estados
 import { Link, useNavigate } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+
 import { api } from "../../services/api";
+import {useState} from "react";// hook para criar estados
+
 
 export function SignUp(){
   const [name, setName] = useState(""); //useState é o hook que cria o estado. Dentro dos parênteses vai o valor inicial. name é o estado e setName é a função que vai mudar o estado
@@ -16,9 +17,10 @@ export function SignUp(){
 
   function handleSignUp(){
     if(!name || !email || !password){ // verificar se todos os campos estão preenchidos
-      return alert("Preencha todos os campos!") // return serve para parar a aplicação caso algum dos campos não tenha sido preenchido
+      return alert("Preencha todos os campos!") ;// return serve para parar a aplicação caso algum dos campos não tenha sido preenchido
     }
 
+    
     api.post("/users", {name, email, password})
     .then(() => {  //then para caso tenha dado tudo certo
       alert("Usuário cadastrado com sucesso!");
@@ -27,7 +29,7 @@ export function SignUp(){
     .catch( error => {// catch para caso tenha dado algum problema no processo de cadastro
       if(error.response){
         alert(error.response.data.message); // pego a msg de erro que criei em UsersController.js, dentro da função create
-      }else{// se não for nenhuma msg específica, então mando uma msg mais genérica como mostrado a seguir
+      }else{// se não for nenhuma msg específica, então mando uma msg mais genérica ( msg a seguir)
         alert("Não foi possível cadastrar.");
       } 
     }); 
@@ -73,9 +75,11 @@ export function SignUp(){
           </label>            
 
           <Button title="Criar conta" onClick={handleSignUp}/>
-          <Link to="/">
-            Já tenho uma conta
-          </Link>
+          <BrowserRouter>
+            <Link to="/">
+              Já tenho uma conta
+            </Link>
+          </BrowserRouter>
           {/* <a href="#">Já tenho uma conta</a> */}
         </div>
       </Form>

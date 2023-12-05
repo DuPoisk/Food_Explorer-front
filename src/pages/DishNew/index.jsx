@@ -16,27 +16,31 @@ export function DishNew(){
   const [dishImage, setDishImage]=useState("");
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
-  const [ingredients, setIngredient] = useState([]); // array com a lista
-  const [newIngredientTag, setNewIngredientTag] = useState(""); // para a as tags
+  const [ingredient, setIngredient] = useState([]); // array com a lista
+  const [newIngredient, setNewIngredient] = useState(""); 
+  // const [newIngredientTag, setNewIngredientTag] = useState(""); // para a as tags
   const [price, setPrice] = useState("");  
   const [description, setDescription] = useState("");
 
   
   //tratamento de exceções
   const HandleNewDish= async () => {    
-    if(!dishImage || !name || !category || !ingredients || !price || !description){
+    if(!dishImage || !name || !category || !ingredient || !price || !description){
       alert("Certifique-se de que todos os campos estão preenchidos.")
       return
-    }
-  }
+    };
 
-  const  HandleIngredientAdd = async()=>{
-    setIngredient((prev) => [...prev, newingredient])
-    setNewIngredient('')
-  }
+    const newDish = {dishImage, name, category, ingredient, price, description};
+   
+  };
+
+  function HandleIngredientAdd(){
+    setIngredient((prevState) => [...prevState, newIngredient]);
+    setNewIngredient("");
+  };
 
   function handleIngredientDelete(deleted) {
-    setIngredients((prev) => prev.filter((ingredient) => ingredient !== deleted))
+    setIngredient((prevState) => prevState.filter((ingredient) => ingredient !== deleted))
   }
 
 
@@ -88,6 +92,7 @@ export function DishNew(){
                   </fieldset>
                 </label>
                   {/* <input type="button" onClick="addTag()">Add</input> */}
+                  {/* onClick={() => handleIngredientDelete(ingredient)}  */}
                 
               </div>
 
@@ -121,16 +126,3 @@ export function DishNew(){
   
   )
 }
-
-/* 
-function addTag() {
-      var ingredientsInput = document.getElementById("ingredients");
-      var currentIngredients = ingredientsInput.value;
-      var newIngredient = prompt("Enter a new ingredient:");
-      
-      if (newIngredient) {
-        // Add the new ingredient as a tag
-        ingredientsInput.value = currentIngredients + (currentIngredients ? ', ' : '') + newIngredient;
-      }
-    }
-*/

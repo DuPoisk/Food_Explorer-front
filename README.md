@@ -34,6 +34,7 @@
 - sqlite
 - bcryptjs
 - dotenv
+- netlify
 
 
 ### :cd: Requisitos
