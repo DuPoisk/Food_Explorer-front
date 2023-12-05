@@ -35,8 +35,3 @@
 - netlify
 
 
-### :cd: Requisitos
-- [NodeJS](https://nodejs.org/en/) 
-- [Visual Studio Code - Vscode](https://code.visualstudio.com/)
-
-
