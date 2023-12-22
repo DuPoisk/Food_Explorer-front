@@ -12,7 +12,7 @@ export default createGlobalStyle `
   }
 
   body {
-    ${({ theme }) => theme.FONTS.ROBOTO};
+    
     background-color: ${({ theme }) => theme.COLORS.DARK_400};
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
@@ -23,9 +23,13 @@ export default createGlobalStyle `
     grid-template-areas:
     "header"
     "content"
-    "footer" 
-    /*;*/
+    "footer";
   }   
+
+  body, input, button, textarea {
+    ${({ theme }) => theme.FONTS.ROBOTO}; /*conteúdo que vem dentro de uma variável. É um conteúdo dinâmico*/
+    outline: none;
+  }
 
   a {
     text-decoration: none;
@@ -37,7 +41,7 @@ export default createGlobalStyle `
   }
 
   button:hover, a:hover{
-    filter: brightness(0.9) /*vai escurecer */
+    filter: brightness(0.9); /*vai escurecer */
   }
 
  

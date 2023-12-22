@@ -20,3 +20,8 @@ export function Details (){
     </Container>
   )
 }
+
+/*
+<Button title={12345}/>
+se for número, uso chaves e o numero
+*/

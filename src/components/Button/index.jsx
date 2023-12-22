@@ -11,3 +11,8 @@ export function Button({title, loading = false, ...rest}) {
     </Container>
   )
 }
+
+/* quando quero mostrar o conteudo de uma propriedade, de maneira separada, precio colcoar entre chaves ; 
+quando loading for verdadeiro vai desabilitar, se for falso vai habilitar;
+caso loading nao seja informado, receberá uma valor padrão que é o false;
+*/

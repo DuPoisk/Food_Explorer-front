@@ -9,8 +9,8 @@ import {SignUp}  from './pages/SignUp';
 */
 
 
-import React from 'react';
-import ReactDOM from 'react-dom/client'; 
+import React from 'react'; // para desenvolver as interfaces
+import ReactDOM from 'react-dom/client'; //manipular elementos que fazem parte da página 
 import { ThemeProvider } from 'styled-components';
 import theme from "./styles/theme.js";
 import GlobalStyles from "./styles/global";
